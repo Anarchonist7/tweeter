@@ -26,9 +26,12 @@ body {
 main {
   width: 450px;
   position: absolute;
-  top: 140px;
+  top: 84px;
   left: 50%;
   margin: 0 0 0 -225px;
+  z-index: -1;
+  background-color: #FFFFFF;
+  height: 600px;
 }
 
 /*
