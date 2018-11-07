@@ -54,10 +54,10 @@ function createTweetElement(obj) {
   var $tweetDiv = $('<div>').addClass('tweetDiv');
   var $image = $('<img>').attr('src', obj.user.avatars.regular);
   var $nameCont = $('<div>').addClass('name');
-  var $name = $('<b>').html(obj.user.name);
-  var $handle = $('<div>').addClass('at').html(obj.user.handle);
-  var $content = $('<div>').addClass('content').html(obj.content.text);
-  var $footer = $('<div>').addClass('footer').html(days + ' days ago');
+  var $name = $('<b>').text(obj.user.name);
+  var $handle = $('<div>').addClass('at').text(obj.user.handle);
+  var $content = $('<div>').addClass('content').text(obj.content.text);
+  var $footer = $('<div>').addClass('footer').text(days + ' days ago');
   var $flag = $('<i>').addClass('icon fas fa-flag');
   var $retweet = $('<i>').addClass('icon fas fa-retweet');
   var $heart = $('<i>').addClass('icon fas fa-heart');

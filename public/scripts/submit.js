@@ -5,7 +5,6 @@ $(document).ready(function() {
   var $button = $('#countMe');
   $button.on('submit', function (event) {
     event.preventDefault();
-
     const $form = $(this);
     console.log('Buttaro clickeroood, performing ajax call...');
 
@@ -26,6 +25,7 @@ $(document).ready(function() {
 
 
       });
+      $('#textPlace').val('');
     }
     // $.ajax({
     //   type: 'POST',
