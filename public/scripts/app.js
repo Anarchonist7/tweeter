@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 const data = [
   {
     "user": {
@@ -53,20 +47,15 @@ const data = [
 
 function createTweetElement(obj) {
   //finds how many days since post
-  var date = new Date();
-  date = date.getTime();
-  var millis = date - obj.created_at;
-  var seconds = millis / 1000;
-  var mins = seconds / 60;
-  var minPerDay = 24 * 60;
-  var days = Math.ceil(mins / minPerDay);
+  var date = new Date().getTime();
+  var days = Math.round((((date - obj.created_at)) / 1000 / 60) / (24 * 60));
   //creates elements
   var $tweet = $('<article>').addClass('tweet');
   var $tweetDiv = $('<div>').addClass('tweetDiv');
   var $image = $('<img>').attr('src', obj.user.avatars.regular);
-  var $name = $('<div>').addClass('name');
-  var $b = $('<b>').html(obj.user.name);
-  var $at = $('<div>').addClass('at').html(obj.user.handle);
+  var $nameCont = $('<div>').addClass('name');
+  var $name = $('<b>').html(obj.user.name);
+  var $handle = $('<div>').addClass('at').html(obj.user.handle);
   var $content = $('<div>').addClass('content').html(obj.content.text);
   var $footer = $('<div>').addClass('footer').html(days + ' days ago');
   var $flag = $('<i>').addClass('icon fas fa-flag');
@@ -74,8 +63,8 @@ function createTweetElement(obj) {
   var $heart = $('<i>').addClass('icon fas fa-heart');
   //appends elements
   $tweet.append($tweetDiv);
-  $tweetDiv.append($image).append($name);
-  $name.append($b).append($at);
+  $tweetDiv.append($image).append($nameCont);
+  $nameCont.append($name).append($handle);
   $tweet.append($content).append($footer);
   $footer.append($flag).append($retweet).append($heart);
 
