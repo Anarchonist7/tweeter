@@ -16,3 +16,14 @@ $(document).ready(function() {
       .css('color', spanColor);
   });
 });
+
+function chars() {
+  var length = $('.textPlace').val().length;
+  if (length > 140) {
+    return 'big';
+  } else if (length < 1) {
+    return 'small';
+  } else {
+    return 'good';
+  }
+}

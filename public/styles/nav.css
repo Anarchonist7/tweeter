@@ -24,8 +24,7 @@
 }
 
 #compose {
-  position: absolute;
-  margin-left: 60em;
+  float: right;
   margin-top: 0.5em;
   width: 7em;
   height: 4em;
