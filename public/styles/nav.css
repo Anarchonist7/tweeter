@@ -17,5 +17,19 @@
   font-size: 2em;
   position: absolute;
   line-height: 80px;
+}
+#compose:hover {
+  background-color: white;
+  cursor: pointer;
+}
 
+#compose {
+  position: absolute;
+  margin-left: 24em;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: honeydew;
 }

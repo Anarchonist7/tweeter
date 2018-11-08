@@ -20,7 +20,8 @@ $(document).ready(function() {
         url: '/tweets',
         data: $form.serialize(),
         success: function () {
-          loadTweets();
+          loadTweet();
+
         }
 
 
