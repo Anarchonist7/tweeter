@@ -31,40 +31,26 @@ function renderTweets(tweets) {
   }
 }
 
-function renderTweet(tweets) {
-  for (let i = 0; i < tweets.length; i++) {
-    if (i === tweets.length - 1) {
-      $('#tweetCont').append(createTweetElement(tweets[i]));
-    }
-  }
-}
-
-function loadTweets () {
+function loadTweets (first) {
   $.ajax({
     type: 'GET',
     url: '/tweets',
     dataType: 'json',
     success: function(data) {
       console.log('wohohoh my data is hmya: ', data);
-      renderTweets(data);
-    }
-  });
-}
+      if (first) {
+        renderTweets(data);
+      } else {
+        console.log('HELLO LOOK AT ME! ', data);
+        renderTweets([data[data.length - 1]]);
 
-function loadTweet () {
-  $.ajax({
-    type: 'GET',
-    url: '/tweets',
-    dataType: 'json',
-    success: function(data) {
-      console.log('wohohoh my data is hmya: ', data);
-      renderTweet(data);
+      }
     }
   });
 }
 
 $(document).ready(function () {
-  loadTweets();
+  loadTweets(true);
 
   $('#compose').on('click', function () {
     $('.new-tweet').slideToggle();
