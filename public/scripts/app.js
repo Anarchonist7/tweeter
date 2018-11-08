@@ -53,6 +53,7 @@ $(document).ready(function () {
   loadTweets(true);
 
   $('#compose').on('click', function () {
+    $('.problem').hide();
     $('.new-tweet').slideToggle();
     $('#textPlace').select();
   });

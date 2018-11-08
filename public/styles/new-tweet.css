@@ -14,12 +14,12 @@
 
 .problem {
   display: none;
-  position: relative;
-  top: 6.3em;
+  position: absolute;
+  top: 9.7em;
   margin-left: 14em;
   width: 6em;
   height: 1em;
-  color: crimson;
+  color: red;
 }
 
 .new-tweet hr {
