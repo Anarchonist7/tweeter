@@ -7,8 +7,9 @@
   border-radius: 10px;
 }
 
-.new-tweet h2 {
+.new-tweet .h2 {
   margin: 1px;
+  width: 7em;
 }
 
 .new-tweet hr {

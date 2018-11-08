@@ -11,11 +11,11 @@
   height: 10em;
 }
 
-article.tweet:hover {
+.tweet:hover {
   opacity: 1;
 }
 
-article.tweet:hover .icon {
+.tweet:hover .icon {
   display: inline;
 }
 
@@ -56,10 +56,11 @@ article.tweet:hover .icon {
 
 .at {
   margin-top: -1em;
-  margin-left: 14em;
-  width: 5em;
+  margin-left: 8em;
+  width: 12em;
   height: 0.8em;
   position: absolute;
+  text-align: right;
 }
 
 .footer {
@@ -73,22 +74,22 @@ article.tweet:hover .icon {
 }
 
 
-i.icon {
+.icon {
   display: none;
   opacity: 100%;
   color: green;
 }
 
-i.fa-heart {
+.fa-heart {
   margin-left: 0.5em;
 }
 
-i.fa-retweet {
+.fa-retweet {
   display: none;
   margin-left: 0.5em;
 }
 
-i.fa-flag {
+.fa-flag {
   display: none;
   margin-left: 19em;
 }
