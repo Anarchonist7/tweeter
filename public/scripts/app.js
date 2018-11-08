@@ -43,7 +43,6 @@ function loadTweets (first) {
       } else {
         console.log('HELLO LOOK AT ME! ', data);
         renderTweets([data[data.length - 1]]);
-
       }
     }
   });
