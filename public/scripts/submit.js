@@ -10,10 +10,11 @@ $(document).ready(function() {
 
 
     if ($('#textPlace').val().length > 140) {
-      alert('Your tweet is too long!');
+      $('.problem').text('Too long!').slideDown(100);
     } else if ($('#textPlace').val().length < 1) {
-      alert('Your tweet is empty!');
+      $('.problem').text('Tweet empty!').slideDown(100);
     } else {
+      $('.problem').hide();
       console.log('success, tweet being submitted...');
       $.ajax({
         type: 'POST',

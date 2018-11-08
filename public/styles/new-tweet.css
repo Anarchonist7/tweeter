@@ -12,6 +12,16 @@
   width: 7em;
 }
 
+.problem {
+  display: none;
+  position: relative;
+  top: 6.3em;
+  margin-left: 14em;
+  width: 6em;
+  height: 1em;
+  color: crimson;
+}
+
 .new-tweet hr {
   margin-bottom: 1.5em;
   padding: 0 2em;
