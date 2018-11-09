@@ -4,8 +4,8 @@
   border: 2px solid lightgray;
   padding: 0.5em;
   background-color: #eee;
-  border-radius: 10px; }
-
+  border-radius: 10px;
+}
 .problem {
   display: none;
   position: absolute;
@@ -13,19 +13,29 @@
   margin-left: 14em;
   width: 6em;
   height: 1em;
-  color: red; }
+  color: red;
+}
 
-.new-tweet .h2 {
+.new-tweet {
+  .h2 {
   margin: 1px;
-  width: 7em; }
-.new-tweet .hr {
+  width: 7em;
+}
+
+.hr {
   margin-bottom: 1.5em;
-  padding: 0 2em; }
-.new-tweet #textPlace {
-  width: 100%; }
+  padding: 0 2em;
+}
+
+#textPlace {
+  width: 100%;
+}
+
+}
+
+
 
 .counter {
   padding-left: 19.5em;
-  font-size: .9em; }
-
-/*# sourceMappingURL=new-tweet.css.map */
+  font-size: .9em;
+}

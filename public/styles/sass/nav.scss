@@ -1,10 +1,13 @@
+$dim: 80px;
+
 #nav-bar {
   position: fixed;
   width: 100%;
   color: #e8fdff;
   padding: 0 2em;
   top: 0;
-  background-color: #00a087; }
+  background-color: #00a087;
+}
 
 .fa-edit {
   position: relative;
@@ -15,24 +18,32 @@
   margin-top: 0.5em;
   padding-right: 1em;
   text-align: right;
-  width: 1em; }
+  width: 1em;
+}
 
 .fa-edit:hover {
   background-color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
-#nav-bar .logo {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px; }
-#nav-bar .header {
+#nav-bar {
+
+.logo {
+  width: $dim;
+  height: $dim;
+  margin-right: 10px;
+}
+.header {
   font-size: 2em;
   position: absolute;
-  line-height: 80px; }
+  line-height: $dim;
+}
+}
 
 #compose:hover {
   cursor: pointer;
-  background-color: white; }
+  background-color: white;
+}
 
 #compose {
   float: right;
@@ -43,6 +54,9 @@
   border-radius: 10px;
   background-color: honeydew;
   padding-right: 1em;
-  text-align: right; }
+  text-align: right;
+}
 
-/*# sourceMappingURL=nav.css.map */
+
+
+
