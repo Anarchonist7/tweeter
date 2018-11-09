@@ -10,20 +10,14 @@ $dim: 80px;
 }
 
 .fa-edit {
-  position: relative;
-  top: 1.45em;
-  left: 2em;
   color: black;
-  float: right;
-  margin-top: 0.5em;
-  padding-right: 1em;
-  text-align: right;
-  width: 1em;
+  left: -4.2em;
+  position: relative;
+  top: -2.55em;
 }
 
-.fa-edit:hover {
+.fa-edit:hover #compose {
   background-color: white;
-  cursor: pointer;
 }
 
 #nav-bar {
@@ -40,12 +34,18 @@ $dim: 80px;
 }
 }
 
-#compose:hover {
-  cursor: pointer;
-  background-color: white;
+#compose {
+  position: relative;
+  width: 117%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: honeydew;
+  text-align: right;
+  padding-right: 1em;
 }
 
-#compose {
+
+.buttonHolder {
   float: right;
   margin-top: 0.5em;
   width: 7em;
@@ -55,6 +55,15 @@ $dim: 80px;
   background-color: honeydew;
   padding-right: 1em;
   text-align: right;
+}
+
+.buttonHolder:hover #compose{
+  background-color: white;
+  cursor: pointer;
+}
+
+.buttonHolder:hover {
+  cursor: pointer;
 }
 
 
