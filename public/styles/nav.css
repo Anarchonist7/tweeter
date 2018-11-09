@@ -7,13 +7,21 @@
   background-color: #00a087;
 }
 
-.fas.fa-edit {
+.fa-edit {
+  position: relative;
+  top: 1.45em;
+  left: 2em;
   color: black;
-  z-index: 2;
-  position: fixed;
-  margin-top: 1.95em;
-  margin-left: 30.6em;
-  margin-right: 0;
+  float: right;
+  margin-top: 0.5em;
+  padding-right: 1em;
+  text-align: right;
+  width: 1em;
+}
+
+.fa-edit:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 #nav-bar .logo {
@@ -28,8 +36,8 @@
   line-height: 80px;
 }
 #compose:hover {
-  background-color: white;
   cursor: pointer;
+  background-color: white;
 }
 
 #compose {
