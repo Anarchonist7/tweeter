@@ -7,6 +7,15 @@
   background-color: #00a087;
 }
 
+.fas.fa-edit {
+  color: black;
+  z-index: 2;
+  position: fixed;
+  margin-top: 1.95em;
+  margin-left: 30.6em;
+  margin-right: 0;
+}
+
 #nav-bar .logo {
   width: 80px;
   height: 80px;
@@ -31,4 +40,6 @@
   border: 1px solid black;
   border-radius: 10px;
   background-color: honeydew;
+  padding-right: 1em;
+  text-align: right;
 }
