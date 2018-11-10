@@ -41,6 +41,7 @@ $dim: 80px;
   background-color: honeydew;
   padding-right: 1em;
   text-align: right;
+  display: none;
 }
 
 #login {
@@ -52,6 +53,7 @@ $dim: 80px;
   text-align: right;
   text-align: center;
   font-weight: bold;
+  display:none;
 }
 
 #login:hover {
@@ -93,7 +95,6 @@ $dim: 80px;
   background-color: honeydew;
   text-align: right;
   padding-right: 1em;
-  display: none;
 }
 
 
@@ -107,18 +108,8 @@ $dim: 80px;
   background-color: honeydew;
   padding-right: 1em;
   text-align: right;
-  display: none;
 }
 
-.register {
-  margin-left: 1em;
-  float: right;
-  margin-top: 0.5em;
-  width: 7em;
-  height: 4em;
-  border: 1px solid black;
-  border-radius: 10px;
-}
 
 .logout {
   display: none;
@@ -173,6 +164,18 @@ $dim: 80px;
   text-align: center;
   padding-right: 1em;
   text-align: right;
+  display: none;
+}
+
+.register {
+  margin-left: 1em;
+  float: right;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
 }
 
 .logBTN {

@@ -15,3 +15,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+Click the compose button and write your tweet! Click that tweet button and watch in awe as your message is saved! Go on, have a scroll! Run out of stuff to scroll through? WRITE MORE TWEETS!
+
+Somewhere on this page is an easter egg, if only one were to click in the right spot...

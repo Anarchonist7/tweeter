@@ -20,6 +20,7 @@ $(document).ready(function() {
         $('.loginHolder').hide();
         $('#compose').show();
         $('#login').hide();
+        $('.new-login').hide();
       }
     });
   });
@@ -31,6 +32,7 @@ $(document).ready(function() {
       type: 'POST',
       url: '/logout',
       success: function () {
+        $('.new-tweet').hide();
         $('.logout').hide();
         $('.register').show();
         $('#compose').hide();

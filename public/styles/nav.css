@@ -35,7 +35,8 @@
   border-radius: 10px;
   background-color: honeydew;
   padding-right: 1em;
-  text-align: right; }
+  text-align: right;
+  display: none; }
 
 #login {
   position: relative;
@@ -45,7 +46,8 @@
   background-color: honeydew;
   text-align: right;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  display: none; }
 
 #login:hover {
   cursor: pointer;
@@ -77,8 +79,7 @@
   border-radius: 10px;
   background-color: honeydew;
   text-align: right;
-  padding-right: 1em;
-  display: none; }
+  padding-right: 1em; }
 
 .buttonHolder {
   float: right;
@@ -89,17 +90,7 @@
   border-radius: 10px;
   background-color: honeydew;
   padding-right: 1em;
-  text-align: right;
-  display: none; }
-
-.register {
-  margin-left: 1em;
-  float: right;
-  margin-top: 0.5em;
-  width: 7em;
-  height: 4em;
-  border: 1px solid black;
-  border-radius: 10px; }
+  text-align: right; }
 
 .logout {
   display: none;
@@ -144,7 +135,18 @@
   background-color: honeydew;
   text-align: center;
   padding-right: 1em;
-  text-align: right; }
+  text-align: right;
+  display: none; }
+
+.register {
+  margin-left: 1em;
+  float: right;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none; }
 
 .logBTN {
   position: relative;
