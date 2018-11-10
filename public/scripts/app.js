@@ -1,4 +1,6 @@
 function createTweetElement(obj) {
+
+  var loggedUser;
   //finds how many days since post
   var date = new Date().getTime();
   var days = Math.round((((date - obj.created_at)) / 1000 / 60) / (24 * 60));
@@ -48,12 +50,30 @@ function loadTweets (first) {
   });
 }
 
+function generateRandomString() {
+  var randomString = '';
+
+  for (var i = 0; i < 6; i++) {
+    randomString += Math.ceil(Math.random() * 6);
+  }
+  return randomString;
+}
+
+
+
+
 $(document).ready(function () {
   loadTweets(true);
+
 
   $('.buttonHolder').on('click', function () {
     $('.problem').hide();
     $('.new-tweet').slideToggle();
     $('#textPlace').select();
+  });
+
+  $('.register').on('click', function () {
+    $('.new-register').slideToggle();
+    $('.rname').select();
   });
 });

@@ -22,6 +22,10 @@
     <!-- styles for tweet container and tweets -->
     <link rel="stylesheet" href="/styles/tweet.css" />
 
+
+    <!-- registration window -->
+    <link rel="stylesheet" href="/styles/register.css" />
+
     <!-- icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -37,6 +41,9 @@
     <!-- submit button ajax stuff -->
     <script type="text/javascript" src="/scripts/submit.js"></script>
 
+    <!-- register button ajax stuff -->
+    <script type="text/javascript" src="/scripts/register.js"></script>
+
   </head>
 
   <body>
@@ -51,6 +58,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-register"><h1>Register Now!</h1><form id="reg" method="POST" action="/users/"><input name="username" class="rname" type="text" placeholder="name"></input><input name="password" class="rpassword" type="text" placeholder="password"></input><input class="rsub" type="submit"></input></form></section>
       <section class="new-tweet">
         <h2 class="h2" >Compose Tweet</h2>
         <div class="problem"></div>

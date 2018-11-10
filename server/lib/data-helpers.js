@@ -1,7 +1,5 @@
 "use strict";
 
-// Simulates the kind of delay we see with network or filesystem operations
-const simulateDelay = require("./util/simulate-delay");
 
 // Defines helper functions for saving and getting tweets, using the database `db`
 module.exports = function makeDataHelpers(db) {
@@ -22,6 +20,14 @@ module.exports = function makeDataHelpers(db) {
         }
         callback(null, tweets);
       });
+    },
+    //ideally x.x saves a user to 'db'
+    createUser: function(newUser, callback) {
+      console.log('new user: ', newUser);
+      console.log(db.collection('users'));
+      db.collection('users').insertOne(newUser);
+
+      callback(null, true);
     }
   };
 };
