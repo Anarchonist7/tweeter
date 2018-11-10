@@ -20,8 +20,8 @@ Click the compose button and write your tweet! Click that tweet button and watch
 
 ## Screenshots
 
-!['This is a screenshot of the tweet compose box'](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.22.05%20AM.png?raw=true)
+!["This is a screenshot of the tweet compose box"](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.22.05%20AM.png?raw=true)
 
-!['This is what the page looks like when the compose box is closed, scroll away!'](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.20.52%20AM.png?raw=true)
+!["This is what the page looks like when the compose box is closed, scroll away!"](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.20.52%20AM.png?raw=true)
 
 Somewhere on this page is an easter egg, if only one were to click in the right spot...
