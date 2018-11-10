@@ -16,10 +16,8 @@ html {
 body {
   margin: 0;
   color: #244751;
-  /*  background-color: #eee;
-  */
-  position: relative;
-  background-image: url("http://i.imgur.com/cnr1TL5.gif"); }
+  background-color: #eee;
+  position: relative; }
 
 main {
   max-width: 450px;
@@ -30,6 +28,9 @@ main {
   z-index: -1;
   background-color: #FFFFFF;
   height: auto; }
+
+.main2 {
+  background-image: url("http://i.imgur.com/cnr1TL5.gif"); }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

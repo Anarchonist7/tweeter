@@ -6,11 +6,10 @@ const express       = require('express');
 const usersRoutes  = express.Router();
 
 module.exports = function(DataHelpers) {
-  // console.log('we are in users 1');
   usersRoutes.post("/", function(req, res) {
-    console.log('we are in users 2');
+
     if (!req.body.username || !req.body.password) {
-      res.status(400).json({ error: 'invalid request: no data in POST body'});
+      res.status(400).json({ error: 'Username and password please!'});
       return;
     }
 
@@ -21,6 +20,12 @@ module.exports = function(DataHelpers) {
     };
     console.log('user: ', user);
     DataHelpers.createUser(user, (err) => {
+      var randomString = '';
+
+      for (var i = 0; i < 6; i++) {
+        randomString += Math.ceil(Math.random() * 6);
+      }
+      req.session.user_id = randomString;
       console.log('IM INSIDE the createuser callback');
       console.log('error: ', err);
 

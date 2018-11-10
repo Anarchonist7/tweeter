@@ -27,6 +27,7 @@ module.exports = function makeDataHelpers(db) {
       console.log(db.collection('users'));
       db.collection('users').insertOne(newUser);
 
+
       callback(null, true);
     }
   };

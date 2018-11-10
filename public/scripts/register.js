@@ -6,7 +6,6 @@ $(document).ready(function() {
     console.log('Buttonni clickeroood, performing ajax call...');
     $('.new-register').hide();
     $('.register').hide();
-    console.log("seabiscuit!", $form.serialize());
     $.ajax({
       type: 'POST',
       url: '/users',

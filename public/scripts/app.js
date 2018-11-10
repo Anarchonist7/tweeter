@@ -50,20 +50,13 @@ function loadTweets (first) {
   });
 }
 
-function generateRandomString() {
-  var randomString = '';
-
-  for (var i = 0; i < 6; i++) {
-    randomString += Math.ceil(Math.random() * 6);
-  }
-  return randomString;
-}
-
-
-
-
 $(document).ready(function () {
   loadTweets(true);
+
+  $('.logo').on('click', function () {
+
+    $('body').toggleClass('main2');
+  });
 
 
   $('.buttonHolder').on('click', function () {

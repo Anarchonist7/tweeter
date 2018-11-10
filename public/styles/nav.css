@@ -6,6 +6,9 @@
   top: 0;
   background-color: #00a087; }
 
+.logo:hover {
+  cursor: pointer; }
+
 .fa-edit {
   color: black;
   left: -4.2em;

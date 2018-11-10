@@ -5,7 +5,7 @@ const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
 const cookieSession = require('cookie-session');
-// const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 var userKey;
 
 app.use(bodyParser.urlencoded({ extended: true }));
