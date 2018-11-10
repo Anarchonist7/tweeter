@@ -20,8 +20,8 @@ Click the compose button and write your tweet! Click that tweet button and watch
 
 ## Screenshots
 
-!["Screenshot of the tweet compose box"](tweeter/docs/Screen Shot 2018-11-10 at 12.22.05 AM.png)
+!["Screenshot of the tweet compose box"](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.22.05%20AM.png?raw=true)
 
-!["Screenshot of the tweets"](tweeter/docs/Screen Shot 2018-11-10 at 12.20.52 AM.png)
+!["Screenshot of the tweets"](https://github.com/Anarchonist7/tweeter/blob/master/docs/Screen%20Shot%202018-11-10%20at%2012.20.52%20AM.png?raw=true)
 
 Somewhere on this page is an easter egg, if only one were to click in the right spot...
