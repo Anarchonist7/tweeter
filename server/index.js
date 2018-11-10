@@ -6,7 +6,6 @@ const bodyParser    = require("body-parser");
 const app           = express();
 const cookieSession = require('cookie-session');
 const bcrypt = require('bcrypt');
-var userKey;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -42,5 +41,3 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
     console.log("Example app listening on port " + PORT);
   });
 });
-
-

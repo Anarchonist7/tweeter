@@ -1,6 +1,4 @@
 function createTweetElement(obj) {
-
-  var loggedUser;
   //finds how many days since post
   var date = new Date().getTime();
   var days = Math.round((((date - obj.created_at)) / 1000 / 60) / (24 * 60));
@@ -39,11 +37,9 @@ function loadTweets (first) {
     url: '/tweets',
     dataType: 'json',
     success: function(data) {
-      console.log('wohohoh my data is hmya: ', data);
       if (first) {
         renderTweets(data);
       } else {
-        console.log('HELLO LOOK AT ME! ', data);
         renderTweets([data[data.length - 1]]);
       }
     }

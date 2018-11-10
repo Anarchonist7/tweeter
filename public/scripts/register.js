@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $('#login').on('click', function ()  {
+    $('.new-login').slideToggle();
+  });
+
   var $btton = $('#reg');
   $btton.on('submit', function (event) {
     event.preventDefault();
@@ -16,7 +20,6 @@ $(document).ready(function() {
         $('.loginHolder').hide();
         $('#compose').show();
         $('#login').hide();
-
       }
     });
   });
@@ -37,10 +40,17 @@ $(document).ready(function() {
       }
     });
 
-
-
-
-
-
+    var $loginBTN = $('.login');
+    $loginBTN.on('submit', function (event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: '/login',
+        success: function () {
+          $('.login').slideUp();
+          $('.buttonHolder').hide();
+        }
+      });
+    });
   });
 });

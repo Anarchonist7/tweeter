@@ -13,13 +13,11 @@ module.exports = function(DataHelpers) {
       res.status(400).json({ error: 'Username and password please!'});
       return;
     }
-
-    console.log('body: ', req.body.username);
     const user = {
       username: req.body.username,
       password: req.body.password
     };
-    console.log('user: ', user);
+
     DataHelpers.createUser(user, (err) => {
       cookieKey = '';
 
@@ -27,8 +25,6 @@ module.exports = function(DataHelpers) {
         cookieKey += Math.ceil(Math.random() * 6);
       }
       req.session.user_id = cookieKey;
-      console.log('IM INSIDE the createuser callback');
-      console.log('error: ', err);
 
       res.status(201).send();
     });
