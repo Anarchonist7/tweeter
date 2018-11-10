@@ -20,6 +20,7 @@ const MONGODB_URI = 'mongodb://localhost:27017/tweeter';
 const datahelperslib = require("./lib/data-helpers.js");
 const tweetsRouteslib = require("./routes/tweets");
 const usersRouteslib = require('./routes/users');
+const logoutRoutelib = require('./routes/logout');
 MongoClient.connect(MONGODB_URI, (err, db) => {
 
   if (err) {
@@ -31,9 +32,11 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   const DataHelpers = datahelperslib(db);
   const tweetsRoutes = tweetsRouteslib(DataHelpers);
   const usersRoutes = usersRouteslib(DataHelpers);
+  const logoutRoute = logoutRoutelib();
 
   app.use("/tweets", tweetsRoutes);
   app.use('/users', usersRoutes);
+  app.use('/logout', logoutRoute);
 
   app.listen(PORT, () => {
     console.log("Example app listening on port " + PORT);

@@ -5,14 +5,42 @@ $(document).ready(function() {
     const $form = $(this);
     console.log('Buttonni clickeroood, performing ajax call...');
     $('.new-register').hide();
-    $('.register').hide();
     $.ajax({
       type: 'POST',
       url: '/users',
       data: $form.serialize(),
       success: function () {
-        console.log('why am i not logged?');
+        $('.register').hide();
+        $('.logout').show();
+        $('.buttonHolder').show();
+        $('.loginHolder').hide();
+        $('#compose').show();
+        $('#login').hide();
+
       }
     });
+  });
+
+  var $logBTN = $('.logout');
+  $logBTN.on('click', function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: '/logout',
+      success: function () {
+        $('.logout').hide();
+        $('.register').show();
+        $('#compose').hide();
+        $('.buttonHolder').hide();
+        $('.loginHolder').show();
+        $('#login').show();
+      }
+    });
+
+
+
+
+
+
   });
 });

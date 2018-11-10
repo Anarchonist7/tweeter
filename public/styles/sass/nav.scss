@@ -13,6 +13,34 @@ $dim: 80px;
   cursor: pointer;
 }
 
+.loginHolder {
+   float: right;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: honeydew;
+  padding-right: 1em;
+  text-align: right;
+}
+
+#login {
+  position: relative;
+  width: 117%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: honeydew;
+  text-align: right;
+  text-align: center;
+  font-weight: bold;
+}
+
+#login:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
 .fa-edit {
   color: black;
   left: -4.2em;
@@ -47,7 +75,7 @@ $dim: 80px;
   background-color: honeydew;
   text-align: right;
   padding-right: 1em;
-
+  display: none;
 }
 
 
@@ -61,9 +89,21 @@ $dim: 80px;
   background-color: honeydew;
   padding-right: 1em;
   text-align: right;
+  display: none;
 }
 
 .register {
+  margin-left: 1em;
+  float: right;
+  margin-top: 0.5em;
+  width: 7em;
+  height: 4em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.logout {
+  display: none;
   margin-left: 1em;
   float: right;
   margin-top: 0.5em;
@@ -82,8 +122,23 @@ $dim: 80px;
   cursor: pointer;
 }
 
+.logout:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.logout:hover .logBTN{
+  background-color: white;
+  cursor: pointer;
+}
+
+
 .register:hover .regBTN {
   background-color: white;
+}
+
+.logBTN:hover {
+  cursor: pointer;
 }
 
 .regBTN:hover {
@@ -100,6 +155,17 @@ $dim: 80px;
   text-align: center;
   padding-right: 1em;
   text-align: right;
+}
+
+.logBTN {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: honeydew;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 .buttonHolder:hover #compose{

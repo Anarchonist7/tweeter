@@ -4,6 +4,7 @@ const userHelper    = require("../lib/util/user-helper");
 
 const express       = require('express');
 const usersRoutes  = express.Router();
+var cookieKey;
 
 module.exports = function(DataHelpers) {
   usersRoutes.post("/", function(req, res) {
@@ -20,12 +21,12 @@ module.exports = function(DataHelpers) {
     };
     console.log('user: ', user);
     DataHelpers.createUser(user, (err) => {
-      var randomString = '';
+      cookieKey = '';
 
       for (var i = 0; i < 6; i++) {
-        randomString += Math.ceil(Math.random() * 6);
+        cookieKey += Math.ceil(Math.random() * 6);
       }
-      req.session.user_id = randomString;
+      req.session.user_id = cookieKey;
       console.log('IM INSIDE the createuser callback');
       console.log('error: ', err);
 
